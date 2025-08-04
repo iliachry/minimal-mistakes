@@ -4,14 +4,14 @@ main:
     url: /en/
   - title: "About"
     url: /en/about/
-  - title: "Business Consulting"
+  - title: "Business\nConsulting"
     url: /en/business-consulting/
-  - title: "Surveying Services"
+  - title: "Surveying\nServices"
     url: /en/surveying-services/
-  - title: "Electrical Network Planning"
+  - title: "Electrical Network\nPlanning"
     url: /en/electrical-network-planning/
-  - title: "ISO Systems Certifications"
-    url: /en/iso-systems-certifications/
+  - title: "ISO Systems\nCertification"
+    url: /en/iso-systems-certification/
 
 # Greek navigation
 main_el:
@@ -19,11 +19,11 @@ main_el:
     url: /
   - title: "Σχετικά"
     url: /about/
-  - title: "Επιχειρηματική Συμβουλευτική"
+  - title: "Επιχειρηματική\nΣυμβουλευτική"
     url: /business-consulting/
-  - title: "Υπηρεσίες Τοπογραφίας"
+  - title: "Υπηρεσίες\nΤοπογραφίας"
     url: /surveying-services/
-  - title: "Σχεδιασμός Ηλεκτρικών Δικτύων"
+  - title: "Σχεδιασμός Ηλεκτρικών\nΔικτύων"
     url: /electrical-network-planning/
-  - title: "Πιστοποιήσεις Συστημάτων ISO"
-    url: /iso-systems-certifications/
+  - title: "Πιστοποιήσεις Συστημάτων\nISO"
+    url: /iso-systems-certification/
