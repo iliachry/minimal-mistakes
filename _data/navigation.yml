@@ -8,7 +8,7 @@ main:
     url: /en/business-consulting/
   - title: "Surveying\nServices"
     url: /en/surveying-services/
-  - title: "Electrical Network\nPlanning"
+  - title: "Electrical\nNetwork Planning"
     url: /en/electrical-network-planning/
   - title: "ISO Systems\nCertification"
     url: /en/iso-systems-certification/
@@ -23,7 +23,7 @@ main_el:
     url: /business-consulting/
   - title: "Υπηρεσίες\nΤοπογραφίας"
     url: /surveying-services/
-  - title: "Σχεδιασμός Ηλεκτρικών\nΔικτύων"
+  - title: "Σχεδιασμός\nΗλεκτρικών Δικτύων"
     url: /electrical-network-planning/
   - title: "Πιστοποιήσεις Συστημάτων\nISO"
     url: /iso-systems-certification/
