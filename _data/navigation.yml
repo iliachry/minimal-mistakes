@@ -1,12 +1,25 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Business Consulting"
+    url: /business-consulting/
+  - title: "Surveying Services"
+    url: /surveying-services/
+  - title: "Electrical Network Planning"
+    url: /electrical-network-planning/
+
+# Greek navigation
+main_el:
+  - title: "Αρχική"
+    url: /
+  - title: "Σχετικά"
+    url: /el/about/
+  - title: "Επιχειρηματική Συμβουλευτική"
+    url: /el/business-consulting/
+  - title: "Υπηρεσίες Τοπογραφίας"
+    url: /el/surveying-services/
+  - title: "Σχεδιασμός Ηλεκτρικών Δικτύων"
+    url: /el/electrical-network-planning/

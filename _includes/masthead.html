@@ -28,6 +28,27 @@
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
+        
+        <!-- Language Switcher -->
+        <div class="language-switcher-nav">
+          {% assign current_page = page.url | strip %}
+          {% if current_page contains '/el/' %}
+            {% comment %} On Greek page - switch to English {% endcomment %}
+            {% assign en_page = current_page | replace_first: '/el/', '/' %}
+            {% assign el_page = current_page %}
+          {% else %}
+            {% comment %} On English page - switch to Greek {% endcomment %}
+            {% assign en_page = current_page %}
+            {% if current_page == '/' %}
+              {% assign el_page = '/el/' %}
+            {% else %}
+              {% assign el_page = current_page | replace_first: '/', '/el/' %}
+            {% endif %}
+          {% endif %}
+          
+          <a href="{{ en_page }}" class="lang-btn-nav {% unless current_page contains '/el/' %}active{% endunless %}">EN</a>
+          <a href="{{ el_page }}" class="lang-btn-nav {% if current_page contains '/el/' %}active{% endif %}">EL</a>
+        </div>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
