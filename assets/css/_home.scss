@@ -2,8 +2,9 @@
    Home Page Specific Styling - Clean Layout
    ========================================================================== */
 
-/* Remove card styling from main container - make it look more natural */
-.archive {
+/* Only apply to home page - more specific selectors */
+body[class*="layout--archive"] .archive,
+body[class*="layout--home"] .archive {
   background: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -16,13 +17,15 @@
   animation: fadeInUp 0.6s ease-out;
 }
 
-.archive:hover {
+body[class*="layout--archive"] .archive:hover,
+body[class*="layout--home"] .archive:hover {
   transform: none;
   box-shadow: none;
 }
 
-/* Improved company name styling */
-.archive h1 {
+/* Improved company name styling - only for home page */
+body[class*="layout--archive"] .archive h1,
+body[class*="layout--home"] .archive h1 {
   font-size: 3rem !important;
   font-weight: 700 !important;
   text-align: center !important;
@@ -35,7 +38,8 @@
   overflow: hidden;
 }
 
-.archive h1::after {
+body[class*="layout--archive"] .archive h1::after,
+body[class*="layout--home"] .archive h1::after {
   content: '' !important;
   position: absolute !important;
   bottom: 0 !important;
@@ -49,8 +53,9 @@
   border-radius: 2px !important;
 }
 
-/* Subtitle styling */
-.archive h1 + p {
+/* Subtitle styling - only for home page */
+body[class*="layout--archive"] .archive h1 + p,
+body[class*="layout--home"] .archive h1 + p {
   font-size: 1.2rem !important;
   color: #666 !important;
   text-align: center !important;
@@ -59,8 +64,9 @@
   line-height: 1.6;
 }
 
-/* Section headers */
-.archive h2 {
+/* Section headers - only for home page */
+body[class*="layout--archive"] .archive h2,
+body[class*="layout--home"] .archive h2 {
   background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
   color: white;
   padding: 1rem 1.5rem !important;
@@ -72,7 +78,8 @@
   border-left: none !important;
 }
 
-.archive h2::before {
+body[class*="layout--archive"] .archive h2::before,
+body[class*="layout--home"] .archive h2::before {
   content: '';
   position: absolute;
   top: 0;
@@ -83,12 +90,14 @@
   transition: left 0.8s ease;
 }
 
-.archive h2:hover::before {
+body[class*="layout--archive"] .archive h2:hover::before,
+body[class*="layout--home"] .archive h2:hover::before {
   left: 100%;
 }
 
-/* Service descriptions */
-.archive h3 {
+/* Service descriptions - only for home page */
+body[class*="layout--archive"] .archive h3,
+body[class*="layout--home"] .archive h3 {
   color: #ff9a44 !important;
   font-size: 1.4rem !important;
   margin: 1.5rem 0 0.5rem 0 !important;
@@ -97,7 +106,8 @@
   position: relative;
 }
 
-.archive h3::after {
+body[class*="layout--archive"] .archive h3::after,
+body[class*="layout--home"] .archive h3::after {
   content: '';
   position: absolute;
   bottom: -3px;
@@ -108,12 +118,14 @@
   transition: width 0.3s ease;
 }
 
-.archive h3:hover::after {
+body[class*="layout--archive"] .archive h3:hover::after,
+body[class*="layout--home"] .archive h3:hover::after {
   width: 100%;
 }
 
-/* Paragraph styling */
-.archive p {
+/* Paragraph styling - only for home page */
+body[class*="layout--archive"] .archive p,
+body[class*="layout--home"] .archive p {
   font-size: 1.05rem !important;
   line-height: 1.7 !important;
   color: #374151 !important;
@@ -121,8 +133,9 @@
   text-align: justify !important;
 }
 
-/* Stats Table Styling */
-.archive table {
+/* Stats Table Styling - only for home page */
+body[class*="layout--archive"] .archive table,
+body[class*="layout--home"] .archive table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
@@ -132,7 +145,8 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.archive th {
+body[class*="layout--archive"] .archive th,
+body[class*="layout--home"] .archive th {
   background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
   color: white;
   padding: 1rem;
@@ -141,23 +155,27 @@
   font-size: 1rem;
 }
 
-.archive td {
+body[class*="layout--archive"] .archive td,
+body[class*="layout--home"] .archive td {
   padding: 0.8rem;
   text-align: center;
   border-bottom: 1px solid #eee;
   transition: background-color 0.3s ease;
 }
 
-.archive tr:hover td {
+body[class*="layout--archive"] .archive tr:hover td,
+body[class*="layout--home"] .archive tr:hover td {
   background: rgba(255, 154, 68, 0.05);
 }
 
-.archive tr:last-child td {
+body[class*="layout--archive"] .archive tr:last-child td,
+body[class*="layout--home"] .archive tr:last-child td {
   border-bottom: none;
 }
 
-/* Testimonials Styling */
-.archive blockquote {
+/* Testimonials Styling - only for home page */
+body[class*="layout--archive"] .archive blockquote,
+body[class*="layout--home"] .archive blockquote {
   background: linear-gradient(135deg, rgba(255, 154, 68, 0.08) 0%, rgba(255, 95, 109, 0.08) 100%);
   border-left: 4px solid #ff9a44;
   padding: 1.5rem;
@@ -169,7 +187,8 @@
   line-height: 1.6;
 }
 
-.archive blockquote::before {
+body[class*="layout--archive"] .archive blockquote::before,
+body[class*="layout--home"] .archive blockquote::before {
   content: '"';
   position: absolute;
   top: -8px;
@@ -180,7 +199,8 @@
   font-family: serif;
 }
 
-.archive blockquote strong {
+body[class*="layout--archive"] .archive blockquote strong,
+body[class*="layout--home"] .archive blockquote strong {
   display: block;
   margin-top: 0.8rem;
   font-style: normal;
@@ -188,26 +208,32 @@
   font-size: 0.9rem;
 }
 
-/* Lists styling */
-.archive ul {
+/* Lists styling - only for home page */
+body[class*="layout--archive"] .archive ul,
+body[class*="layout--home"] .archive ul {
   margin: 1rem 0;
   padding-left: 1.5rem;
 }
 
-.archive li {
+body[class*="layout--archive"] .archive li,
+body[class*="layout--home"] .archive li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
   color: #555;
 }
 
-.archive li strong {
+body[class*="layout--archive"] .archive li strong,
+body[class*="layout--home"] .archive li strong {
   color: #ff9a44;
 }
 
-/* CTA Links */
-.archive a[href="#contact"],
-.archive a[href="#brochure"],
-.archive a[href="#consultation"] {
+/* CTA Links - only for home page */
+body[class*="layout--archive"] .archive a[href="#contact"],
+body[class*="layout--home"] .archive a[href="#contact"],
+body[class*="layout--archive"] .archive a[href="#brochure"],
+body[class*="layout--home"] .archive a[href="#brochure"],
+body[class*="layout--archive"] .archive a[href="#consultation"],
+body[class*="layout--home"] .archive a[href="#consultation"] {
   display: inline-block;
   background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
   color: white;
@@ -223,17 +249,21 @@
   font-size: 0.9rem;
 }
 
-.archive a[href="#contact"]:hover,
-.archive a[href="#brochure"]:hover,
-.archive a[href="#consultation"]:hover {
+body[class*="layout--archive"] .archive a[href="#contact"]:hover,
+body[class*="layout--home"] .archive a[href="#contact"]:hover,
+body[class*="layout--archive"] .archive a[href="#brochure"]:hover,
+body[class*="layout--home"] .archive a[href="#brochure"]:hover,
+body[class*="layout--archive"] .archive a[href="#consultation"]:hover,
+body[class*="layout--home"] .archive a[href="#consultation"]:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255,154,68,0.4);
   text-decoration: none;
   color: white;
 }
 
-/* Footer Quote */
-.archive em {
+/* Footer Quote - only for home page */
+body[class*="layout--archive"] .archive em,
+body[class*="layout--home"] .archive em {
   display: block;
   text-align: center;
   font-style: italic;
@@ -245,51 +275,64 @@
   font-size: 1rem;
 }
 
-/* Responsive Design */
+/* Responsive Design - only for home page */
 @media (max-width: 768px) {
-  .archive {
+  body[class*="layout--archive"] .archive,
+  body[class*="layout--home"] .archive {
     padding: 1rem 0;
     margin: 0.5rem 0;
   }
   
-  .archive h1 {
+  body[class*="layout--archive"] .archive h1,
+  body[class*="layout--home"] .archive h1 {
     font-size: 2.2rem !important;
   }
   
-  .archive h1 + p {
+  body[class*="layout--archive"] .archive h1 + p,
+  body[class*="layout--home"] .archive h1 + p {
     font-size: 1.1rem !important;
   }
   
-  .archive h2 {
+  body[class*="layout--archive"] .archive h2,
+  body[class*="layout--home"] .archive h2 {
     padding: 0.8rem 1rem !important;
     font-size: 1.2rem;
   }
   
-  .archive h3 {
+  body[class*="layout--archive"] .archive h3,
+  body[class*="layout--home"] .archive h3 {
     font-size: 1.2rem !important;
   }
   
-  .archive p {
+  body[class*="layout--archive"] .archive p,
+  body[class*="layout--home"] .archive p {
     font-size: 1rem !important;
   }
   
-  .archive table {
+  body[class*="layout--archive"] .archive table,
+  body[class*="layout--home"] .archive table {
     font-size: 0.85rem;
   }
   
-  .archive th,
-  .archive td {
+  body[class*="layout--archive"] .archive th,
+  body[class*="layout--home"] .archive th,
+  body[class*="layout--archive"] .archive td,
+  body[class*="layout--home"] .archive td {
     padding: 0.6rem 0.4rem;
   }
   
-  .archive blockquote {
+  body[class*="layout--archive"] .archive blockquote,
+  body[class*="layout--home"] .archive blockquote {
     font-size: 0.9rem;
     padding: 1rem;
   }
   
-  .archive a[href="#contact"],
-  .archive a[href="#brochure"],
-  .archive a[href="#consultation"] {
+  body[class*="layout--archive"] .archive a[href="#contact"],
+  body[class*="layout--home"] .archive a[href="#contact"],
+  body[class*="layout--archive"] .archive a[href="#brochure"],
+  body[class*="layout--home"] .archive a[href="#brochure"],
+  body[class*="layout--archive"] .archive a[href="#consultation"],
+  body[class*="layout--home"] .archive a[href="#consultation"] {
     display: block;
     margin: 0.3rem 0;
     text-align: center;

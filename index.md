@@ -36,12 +36,44 @@ Streamlined ISO certification processes for Quality Management (9001), Environme
 
 ## Our Success Metrics
 
-| Service Area | Projects Completed | Client Satisfaction | Average ROI |
-|-------------|-------------------|-------------------|-------------|
-| Business Consulting | 150+ | 98% | 340% |
-| Surveying Services | 300+ | 99% | 280% |
-| Electrical Planning | 200+ | 97% | 420% |
-| ISO Certification | 400+ | 100% | 380% |
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Service Area</th>
+        <th>Projects Completed</th>
+        <th>Client Satisfaction</th>
+        <th>Average ROI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Business Consulting</td>
+        <td>150+</td>
+        <td>98%</td>
+        <td>340%</td>
+      </tr>
+      <tr>
+        <td>Surveying Services</td>
+        <td>300+</td>
+        <td>99%</td>
+        <td>280%</td>
+      </tr>
+      <tr>
+        <td>Electrical Planning</td>
+        <td>200+</td>
+        <td>97%</td>
+        <td>420%</td>
+      </tr>
+      <tr>
+        <td>ISO Certification</td>
+        <td>400+</td>
+        <td>100%</td>
+        <td>380%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Client Testimonials
 
@@ -86,6 +118,10 @@ Connected systems and smart monitoring for enhanced operational efficiency and r
 
 Contact us today to discover how DataMark can help you achieve operational excellence, regulatory compliance, and sustainable growth.
 
-**[Get Started Today](#contact)** | **[Download Our Brochure](#brochure)** | **[Schedule a Consultation](#consultation)**
+<div class="cta-buttons-container">
+  <a href="#contact" class="cta-button">Get Started Today</a>
+  <a href="#brochure" class="cta-button">Download Our Brochure</a>
+  <a href="#consultation" class="cta-button">Schedule a Consultation</a>
+</div>
 
 *Empowering businesses through innovation, expertise, and unwavering commitment to excellence.*

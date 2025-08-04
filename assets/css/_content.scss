@@ -2,8 +2,8 @@
    Content Styling with Modern Enhancements
    ========================================================================== */
 
-/* Modern card-based layout for content */
-.page__content, .archive {
+/* Modern card-based layout for content - REMOVED to fix card issue on other pages */
+/* .page__content, .archive {
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -19,7 +19,7 @@
 .page__content:hover, .archive:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-}
+} */
 
 /* Modern animated title styling */
 .page__title, .archive h1 {
@@ -94,7 +94,6 @@
   color: #374151 !important;
   margin-bottom: 1.5rem !important;
   text-align: justify !important;
-  position: relative;
 }
 
 .page__content ul, .archive ul {
