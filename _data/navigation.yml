@@ -10,6 +10,8 @@ main:
     url: /en/surveying-services/
   - title: "Electrical Network Planning"
     url: /en/electrical-network-planning/
+  - title: "ISO Systems Certifications"
+    url: /en/iso-systems-certifications/
 
 # Greek navigation
 main_el:
@@ -23,3 +25,5 @@ main_el:
     url: /surveying-services/
   - title: "Σχεδιασμός Ηλεκτρικών Δικτύων"
     url: /electrical-network-planning/
+  - title: "Πιστοποιήσεις Συστημάτων ISO"
+    url: /iso-systems-certifications/
