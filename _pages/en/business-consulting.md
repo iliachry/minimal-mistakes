@@ -1,6 +1,6 @@
 ---
 title: "Business Consulting"
-permalink: /business-consulting/
+permalink: /en/business-consulting/
 layout: single
 lang: en
 ---

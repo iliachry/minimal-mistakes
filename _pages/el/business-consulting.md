@@ -1,6 +1,6 @@
 ---
 title: "Επιχειρηματική Συμβουλευτική"
-permalink: /el/business-consulting/
+permalink: /business-consulting/
 layout: single
 lang: el
 ---

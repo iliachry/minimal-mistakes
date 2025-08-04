@@ -1,6 +1,6 @@
 ---
 title: "Surveying Services"
-permalink: /surveying-services/
+permalink: /en/surveying-services/
 layout: single
 lang: en
 ---

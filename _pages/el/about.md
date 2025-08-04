@@ -1,6 +1,6 @@
 ---
 title: "Σχετικά με την DataMark"
-permalink: /el/about/
+permalink: /about/
 layout: single
 lang: el
 ---

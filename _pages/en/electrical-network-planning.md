@@ -1,6 +1,6 @@
 ---
 title: "Electrical Network Planning"
-permalink: /electrical-network-planning/
+permalink: /en/electrical-network-planning/
 layout: single
 lang: en
 ---

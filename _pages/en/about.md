@@ -1,6 +1,6 @@
 ---
 title: "About DataMark"
-permalink: /about/
+permalink: /en/about/
 layout: single
 lang: en
 ---

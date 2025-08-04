@@ -2,6 +2,7 @@
 layout: home
 author_profile: true
 lang: en
+permalink: /en/
 ---
 
 # DataMark

@@ -2,7 +2,7 @@
 layout: home
 author_profile: true
 lang: el
-permalink: /el/
+permalink: /
 --- 
 # DataMark
 

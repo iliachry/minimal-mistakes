@@ -1,6 +1,6 @@
 ---
 title: "Σχεδιασμός Ηλεκτρικών Δικτύων"
-permalink: /el/electrical-network-planning/
+permalink: /electrical-network-planning/
 layout: single
 lang: el
 ---

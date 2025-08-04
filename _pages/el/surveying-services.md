@@ -1,6 +1,6 @@
 ---
 title: "Υπηρεσίες Τοπογραφίας"
-permalink: /el/surveying-services/
+permalink: /surveying-services/
 layout: single
 lang: el
 ---

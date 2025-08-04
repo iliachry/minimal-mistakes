@@ -1,25 +1,25 @@
 # main links
 main:
   - title: "Home"
-    url: /
+    url: /en/
   - title: "About"
-    url: /about/
+    url: /en/about/
   - title: "Business Consulting"
-    url: /business-consulting/
+    url: /en/business-consulting/
   - title: "Surveying Services"
-    url: /surveying-services/
+    url: /en/surveying-services/
   - title: "Electrical Network Planning"
-    url: /electrical-network-planning/
+    url: /en/electrical-network-planning/
 
 # Greek navigation
 main_el:
   - title: "Αρχική"
-    url: /el
+    url: /
   - title: "Σχετικά"
-    url: /el/about/
+    url: /about/
   - title: "Επιχειρηματική Συμβουλευτική"
-    url: /el/business-consulting/
+    url: /business-consulting/
   - title: "Υπηρεσίες Τοπογραφίας"
-    url: /el/surveying-services/
+    url: /surveying-services/
   - title: "Σχεδιασμός Ηλεκτρικών Δικτύων"
-    url: /el/electrical-network-planning/
+    url: /electrical-network-planning/
