@@ -7,45 +7,4 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-// Language switcher styles
-.language-switcher-nav {
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-  gap: 4px;
-}
-
-.lang-btn-nav {
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 12px;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-  color: #666;
-  background-color: transparent;
-}
-
-.lang-btn-nav:hover {
-  background-color: #f8f9fa;
-  color: #333;
-}
-
-.lang-btn-nav.active {
-  background-color: #2e8b57;
-  color: white;
-  border-color: #2e8b57;
-}
-
-@media (max-width: 768px) {
-  .language-switcher-nav {
-    margin-left: 10px;
-  }
-  
-  .lang-btn-nav {
-    padding: 4px 8px;
-    font-size: 11px;
-  }
-}
+@import "custom"; // custom styles

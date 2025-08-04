@@ -1,0 +1,97 @@
+/* Custom header improvements */
+.masthead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.masthead .masthead__inner-wrap {
+  background: transparent;
+}
+
+.masthead .masthead__menu {
+  background: transparent;
+}
+
+.masthead .greedy-nav {
+  background: transparent;
+}
+
+.masthead .site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.masthead .site-title:hover {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.masthead .visible-links .masthead__menu-item a {
+  color: rgba(255,255,255,0.9);
+  font-weight: 150;
+  //padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.masthead .visible-links .masthead__menu-item a:hover {
+  color: white;
+  background: rgba(255,255,255,0.1);
+  text-decoration: none;
+}
+
+.masthead .language-switcher-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  gap: 4px;
+}
+
+.masthead .language-switcher-nav .lang-btn-nav {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.masthead .language-switcher-nav .lang-btn-nav:hover {
+  background: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+
+.masthead .language-switcher-nav .lang-btn-nav.active {
+  background: white;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.masthead .greedy-nav__toggle {
+  color: white;
+}
+
+.masthead .greedy-nav__toggle .navicon {
+  background: white;
+}
+
+.masthead .greedy-nav__toggle .navicon::before,
+.masthead .greedy-nav__toggle .navicon::after {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .masthead .language-switcher-nav {
+    margin-left: 10px;
+  }
+  
+  .masthead .language-switcher-nav .lang-btn-nav {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+} 
