@@ -1,0 +1,297 @@
+/* =============================================================================
+   Home Page Specific Styling - Single Card Layout
+   ========================================================================== */
+
+/* Single cohesive card for entire home page content */
+.archive {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 3rem;
+  margin: 2rem 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.archive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.2);
+}
+
+/* Improved company name styling */
+.archive h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+  background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.archive h1::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 120px !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #ff9a44, #ff5f6d, #ff9a44);
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+  border-radius: 2px !important;
+}
+
+/* Subtitle styling */
+.archive h1 + p {
+  font-size: 1.2rem !important;
+  color: #666 !important;
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Section headers */
+.archive h2 {
+  background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
+  color: white;
+  padding: 1rem 1.5rem !important;
+  border-radius: 8px;
+  margin: 2.5rem 0 1.5rem 0 !important;
+  box-shadow: 0 4px 15px rgba(255, 154, 68, 0.3);
+  position: relative;
+  overflow: hidden;
+  border-left: none !important;
+}
+
+.archive h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.8s ease;
+}
+
+.archive h2:hover::before {
+  left: 100%;
+}
+
+/* Service descriptions */
+.archive h3 {
+  color: #ff9a44 !important;
+  font-size: 1.4rem !important;
+  margin: 1.5rem 0 0.5rem 0 !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+  position: relative;
+}
+
+.archive h3::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff9a44, #ff5f6d);
+  transition: width 0.3s ease;
+}
+
+.archive h3:hover::after {
+  width: 100%;
+}
+
+/* Paragraph styling within the card */
+.archive p {
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+  color: #374151 !important;
+  margin-bottom: 1rem !important;
+  text-align: justify !important;
+}
+
+/* Stats Table Styling */
+.archive table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.archive th {
+  background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.archive td {
+  padding: 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.archive tr:hover td {
+  background: rgba(255, 154, 68, 0.05);
+}
+
+.archive tr:last-child td {
+  border-bottom: none;
+}
+
+/* Testimonials Styling */
+.archive blockquote {
+  background: linear-gradient(135deg, rgba(255, 154, 68, 0.08) 0%, rgba(255, 95, 109, 0.08) 100%);
+  border-left: 4px solid #ff9a44;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  position: relative;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.archive blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  font-size: 3rem;
+  color: #ff9a44;
+  opacity: 0.3;
+  font-family: serif;
+}
+
+.archive blockquote strong {
+  display: block;
+  margin-top: 0.8rem;
+  font-style: normal;
+  color: #ff9a44;
+  font-size: 0.9rem;
+}
+
+/* Lists styling */
+.archive ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.archive li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.archive li strong {
+  color: #ff9a44;
+}
+
+/* CTA Links */
+.archive a[href="#contact"],
+.archive a[href="#brochure"],
+.archive a[href="#consultation"] {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin: 0.3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255,154,68,0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.archive a[href="#contact"]:hover,
+.archive a[href="#brochure"]:hover,
+.archive a[href="#consultation"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,154,68,0.4);
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer Quote */
+.archive em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 154, 68, 0.05) 0%, rgba(255, 95, 109, 0.05) 100%);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .archive {
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .archive h1 {
+    font-size: 2.2rem !important;
+  }
+  
+  .archive h1 + p {
+    font-size: 1.1rem !important;
+  }
+  
+  .archive h2 {
+    padding: 0.8rem 1rem !important;
+    font-size: 1.2rem;
+  }
+  
+  .archive h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .archive p {
+    font-size: 1rem !important;
+  }
+  
+  .archive table {
+    font-size: 0.85rem;
+  }
+  
+  .archive th,
+  .archive td {
+    padding: 0.6rem 0.4rem;
+  }
+  
+  .archive blockquote {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  
+  .archive a[href="#contact"],
+  .archive a[href="#brochure"],
+  .archive a[href="#consultation"] {
+    display: block;
+    margin: 0.3rem 0;
+    text-align: center;
+  }
+} 
