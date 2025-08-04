@@ -4,9 +4,6 @@ permalink: /business-consulting/
 layout: single
 lang: en
 ---
-
-# Business Consulting Services
-
 DataMark provides comprehensive business consulting services to help organizations optimize their operations, improve efficiency, and achieve sustainable growth.
 
 ## Our Consulting Approach

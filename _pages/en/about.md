@@ -4,9 +4,6 @@ permalink: /about/
 layout: single
 lang: en
 ---
-
-# About DataMark
-
 DataMark is a leading provider of professional business consulting, surveying, and electrical network planning services. With years of experience in the industry, we help businesses optimize their operations and infrastructure through strategic solutions.
 
 ## Our Mission

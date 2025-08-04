@@ -4,9 +4,6 @@ permalink: /surveying-services/
 layout: single
 lang: en
 ---
-
-# Surveying Services
-
 DataMark delivers precise and reliable surveying services using state-of-the-art technology and experienced professionals to meet the most demanding project requirements.
 
 ## Our Surveying Expertise

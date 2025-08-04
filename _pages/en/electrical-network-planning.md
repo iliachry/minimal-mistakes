@@ -4,9 +4,6 @@ permalink: /electrical-network-planning/
 layout: single
 lang: en
 ---
-
-# Electrical Network Planning
-
 DataMark specializes in comprehensive electrical network planning and design services, delivering innovative solutions for power distribution, renewable energy integration, and smart grid implementation.
 
 ## Our Electrical Engineering Expertise
