@@ -14,7 +14,7 @@ main:
 # Greek navigation
 main_el:
   - title: "Αρχική"
-    url: /
+    url: /el/
   - title: "Σχετικά"
     url: /el/about/
   - title: "Επιχειρηματική Συμβουλευτική"

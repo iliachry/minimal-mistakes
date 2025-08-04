@@ -12,15 +12,27 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
         </a>
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
+          {%- if page.lang == 'el' -%}
+            {%- for link in site.data.navigation.main_el -%}
+              <li class="masthead__menu-item">
+                <a
+                  href="{{ link.url | relative_url }}"
+                  {% if link.description %} title="{{ link.description }}"{% endif %}
+                  {% if link.target %} target="{{ link.target }}"{% endif %}
+                >{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          {%- else -%}
+            {%- for link in site.data.navigation.main -%}
+              <li class="masthead__menu-item">
+                <a
+                  href="{{ link.url | relative_url }}"
+                  {% if link.description %} title="{{ link.description }}"{% endif %}
+                  {% if link.target %} target="{{ link.target }}"{% endif %}
+                >{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          {%- endif -%}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
@@ -31,23 +43,24 @@
         
         <!-- Language Switcher -->
         <div class="language-switcher-nav">
-          {% assign current_page = page.url | strip %}
-          {% if current_page contains '/el/' %}
-            {% comment %} On Greek page - switch to English {% endcomment %}
-            {% assign en_page = current_page | replace_first: '/el/', '/' %}
-            {% assign el_page = current_page %}
+          {% assign page_lang = page.lang | default: site.locale | default: 'en' %}
+      
+          {%- if page_lang == 'en' -%}
+            {%- assign is_english = true -%}
+          {%- else -%}
+            {%- assign is_english = false -%}
+          {%- endif -%}
+      
+          {% if is_english %}
+            {%- assign en_url = page.url | relative_url -%}
+            {%- assign el_url = page.url | prepend: '/el' | relative_url -%}
           {% else %}
-            {% comment %} On English page - switch to Greek {% endcomment %}
-            {% assign en_page = current_page %}
-            {% if current_page == '/' %}
-              {% assign el_page = '/el/' %}
-            {% else %}
-              {% assign el_page = current_page | replace_first: '/', '/el/' %}
-            {% endif %}
+            {%- assign en_url = page.url | remove: '/el' | relative_url -%}
+            {%- assign el_url = page.url | relative_url -%}
           {% endif %}
-          
-          <a href="{{ en_page }}" class="lang-btn-nav {% unless current_page contains '/el/' %}active{% endunless %}">EN</a>
-          <a href="{{ el_page }}" class="lang-btn-nav {% if current_page contains '/el/' %}active{% endif %}">EL</a>
+      
+          <a href="{{ en_url }}" class="lang-btn-nav{% if is_english %} active{% endif %}">EN</a>
+          <a href="{{ el_url }}" class="lang-btn-nav{% unless is_english %} active{% endunless %}">EL</a>
         </div>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
