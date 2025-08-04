@@ -510,3 +510,133 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* About page specific styling - full width layout */
+body[class*="layout--single"] .page__inner-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+body[class*="layout--single"] .page__content {
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+/* Override sidebar layout for single pages */
+body[class*="layout--single"] .page {
+  float: none !important;
+  width: 100% !important;
+  padding-inline-end: 0 !important;
+}
+
+body[class*="layout--single"] .page__inner-wrap {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* Home page (archive layout) specific styling */
+body[class*="layout--archive"] .archive {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  float: none !important;
+  width: 100% !important;
+}
+
+body[class*="layout--archive"] .archive h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+body[class*="layout--archive"] .archive h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #ff9a44 0%, #ff5f6d 100%);
+  border-radius: 2px;
+}
+
+body[class*="layout--archive"] .archive p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+body[class*="layout--single"] .page__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body[class*="layout--single"] .page__content h2 {
+  margin: 2.5rem 0 1rem 0;
+  padding: 0.5rem 0;
+  border-left: 4px solid #ff9a44;
+  padding-left: 1rem;
+  background: linear-gradient(90deg, rgba(255, 154, 68, 0.1) 0%, transparent 100%);
+  border-radius: 0 4px 4px 0;
+}
+
+body[class*="layout--single"] .page__content h3 {
+  margin: 2rem 0 1rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+body[class*="layout--single"] .page__content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+body[class*="layout--single"] .page__content ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+body[class*="layout--single"] .page__content li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+body[class*="layout--single"] .page__content li::before {
+  content: '▸';
+  color: #ff9a44;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5rem;
+}
+
+/* Responsive adjustments for about pages */
+@media (max-width: 768px) {
+  body[class*="layout--single"] .page__inner-wrap {
+    padding: 0 1rem;
+  }
+  
+  body[class*="layout--single"] .page__content {
+    padding: 1rem 0;
+  }
+  
+  body[class*="layout--archive"] .archive {
+    padding: 0 1rem;
+  }
+  
+  body[class*="layout--archive"] .archive h1 {
+    font-size: 2rem;
+  }
+  
+  body[class*="layout--archive"] .archive p {
+    font-size: 1rem;
+  }
+}
