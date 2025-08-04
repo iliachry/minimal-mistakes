@@ -1,24 +1,24 @@
 /* =============================================================================
-   Home Page Specific Styling - Single Card Layout
+   Home Page Specific Styling - Clean Layout
    ========================================================================== */
 
-/* Single cohesive card for entire home page content */
+/* Remove card styling from main container - make it look more natural */
 .archive {
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 3rem;
-  margin: 2rem 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  padding: 2rem 0;
+  margin: 1rem 0;
+  transition: none;
   animation: fadeInUp 0.6s ease-out;
 }
 
 .archive:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 50px rgba(0,0,0,0.2);
+  transform: none;
+  box-shadow: none;
 }
 
 /* Improved company name styling */
@@ -112,7 +112,7 @@
   width: 100%;
 }
 
-/* Paragraph styling within the card */
+/* Paragraph styling */
 .archive p {
   font-size: 1.05rem !important;
   line-height: 1.7 !important;
@@ -248,8 +248,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .archive {
-    padding: 2rem;
-    margin: 1rem 0;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
   }
   
   .archive h1 {
