@@ -11,7 +11,9 @@ main:
   - title: "Electrical\nNetwork Planning"
     url: /en/electrical-network-planning/
   - title: "ISO Systems\nCertification"
-    url: /en/iso-systems-certification/
+    url: /en/iso-systems-certifications/
+  - title: "Contact\nUs"
+    url: /en/contact/
 
 # Greek navigation
 main_el:
@@ -26,4 +28,6 @@ main_el:
   - title: "Σχεδιασμός\nΗλεκτρικών Δικτύων"
     url: /electrical-network-planning/
   - title: "Πιστοποιήσεις Συστημάτων\nISO"
-    url: /iso-systems-certification/
+    url: /iso-systems-certifications/
+  - title: "Επικοινωνήστε\nμαζί μας"
+    url: /contact/

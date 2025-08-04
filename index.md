@@ -7,6 +7,6 @@ permalink: /en/
 
 # DataMark
 
-Professional business consulting, surveying, and electrical network planning services.
+Professional business consulting, surveying, electrical network planning services, and ISO systems certifications.
 
-We help businesses optimize their operations through strategic consulting, precise surveying, and comprehensive electrical infrastructure planning.
+We help businesses optimize their operations through strategic consulting, precise surveying, comprehensive electrical infrastructure planning, and ISO systems certifications based on the latest standards.
